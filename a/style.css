@@ -26,11 +26,8 @@ body {
 }
 
 
-@media screen and (min-width: 600px){
-  body {
-    font-size: 1em;
-  }
-}
+
+
 
 
 /*TYPOGRAPHY*/
@@ -99,4 +96,35 @@ article.event {
 
 .column p {
   margin: 7px 0;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+
+  body {
+    font-size: 1em;
+  }
+
+  /*.resume__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }*/
+
+  .resume__contact {
+    min-width: 100%;
+  }
+
+  .resume__main {
+    float: left;
+    width: 70%;
+  }
+
+  .resume__secondary {
+    float: right;
+    width: 30%;
+  }
+
+
 }
