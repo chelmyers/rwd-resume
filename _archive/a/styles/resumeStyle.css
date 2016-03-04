@@ -1,0 +1,316 @@
+/*GENERAL*/
+
+html,body{
+	width: 100%;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+	color: #101010;
+}
+
+
+
+/*LINKS*/
+a:link {
+	color:#FF4800;
+	text-decoration: none;
+}
+a:hover {
+	color:#FF4800;
+	text-decoration:underline;
+}
+a:visited {
+	color:#DE4D04;
+	text-decoration: none;
+}
+
+
+
+
+/*TYPOGRAPHY*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'League Gothic';
+	color: #333;
+}
+
+	h1 {
+		font-size: 4em;
+		line-height: 1;
+		padding-top: 20px;
+		margin: 0;
+		padding-left: 15px;
+	}
+
+	h2{
+		font-size:1.8em;
+		margin:10px 0px 2px 0px;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+
+/*HEADER + BANNER*/
+#banner {
+	background: #eaf6f9 url('../imgs/banner-bkgnd.png') repeat left top;
+	font-family: 'League Gothic';
+	height: 100px;
+	width:100%;
+
+}
+.linkedin {
+	float: left;
+	margin-left: 10%;
+	margin-top: 15px;
+}
+
+
+/*ADDRESS + INFORMATION*/
+#contactInfo {
+	font-size:.9em;
+	line-height: 14px;
+	width: 100%;
+}
+
+#contactInfo ul{
+	list-style: none;
+	font-family:'fanwoodregular', Arial;
+	padding:0;
+	margin:0;
+	color:#333;
+	
+}
+
+#contactInfo ul a{
+	text-decoration: none;
+}
+
+#contactInfo ul a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*CONTENT + LAYOUT*/
+#wrapper{
+	padding:1em;
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin: 0 auto -67px;
+	padding-bottom:10px;
+}
+
+article {
+	font-family:'fanwoodregular', Arial;
+	color:#333;
+	font-size:1em;
+	margin-top:5px;
+	overflow:hidden;
+}
+
+#secondary article{
+	color:#555;
+}
+
+#secondary article ul{
+	list-style: dot;
+	padding:0px 0px 0px 10px;
+	margin:0px 0px 0px 10px;
+}
+
+.jobDescription ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+	.jobName, .projName {
+		font-weight:bold;
+		font-size:1em;
+
+	}
+
+	.jobTitle, .projDate {
+		font-weight:bold;
+		font-size:1em;
+
+	}
+
+	.dates{
+		font-style:italic;
+		font-size:.8em;
+		margin-top:5px;
+	}
+
+	.event{
+		float:left;
+		width: 100%;
+	}
+
+.group ul{
+	list-style: dot;
+	padding:0px 0px 0px 10px;
+	margin:0px 0px 0px 10px;
+
+}
+
+
+/*FOOTER*/
+
+#footer {
+	background: #eaf6f9;
+	height: 67px;
+}
+
+.push{
+	height:67px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 650px) {
+	/*FOR SCREENS 650PX AND UP*/
+
+
+	/*TYPOGRAPHY*/
+	h1 {
+		font-size: 6em;
+		line-height: 1;
+		float:left;
+		margin: 33px 0 0 0;
+		padding-left: 10%;
+	}
+
+	/*HEADER + BANNER*/
+	#banner {
+		background: #eaf6f9 url('../imgs/banner-bkgnd.png') repeat left top;
+		height: 134px;
+	}
+
+
+	/*ADDRESS + INFO*/
+	#contactInfo {
+		font-size:1em;
+		float:left;
+		line-height:22px;
+	}
+
+
+	/*CONTENT + LAYOUT*/
+	#wrapper{
+		margin:0 auto;
+		width:80%;
+		padding-top:10px;
+		
+	}
+
+	article{
+		margin-top:10px;
+
+	}
+
+	.left{
+		float:left;
+		width:50%;
+		padding:0;
+		margin:0;
+	}
+
+	.right{
+		float:right;
+		width:50%;
+		padding:0;
+		margin:0;
+		text-align:right;
+	}
+
+	#main {
+		float:left;
+		width:65%;
+		border-right: 2px #eaf6f9 solid;
+		padding-right:3%;
+		padding-bottom: 20px;
+	}
+
+	#secondary {
+		float:right;
+		width:29%;
+		margin-bottom: 2em;
+
+	}
+	#secondary article ul{
+		list-style:dot;
+		margin-left:10px;
+		padding-left:10px;
+	}
+
+
+	.dates{
+		margin:0;
+	}
+
+	.group{
+		width:33%;
+		float:left;
+	}
+
+	.group ul{
+		list-style:none;
+		margin: 0px 5px 0px 5px;
+		padding:0;
+	}
+
+	.group ul:first-child{
+		margin: 0px 5px 0px 0px;
+	}
+
+
+	/*FOOTER*/
+	#footer {
+		background: #eaf6f9;
+		height: 67px;
+		clear:both;
+		margin-top:20px;
+	}
+	
+} /*end of 650up*/
+
+
+
+
+
+
+
+
+/*FONTS*/
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/league_gothic.eot');
+	src: url('../fonts/league_gothic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/league_gothic.woff') format('woff'),
+	url('../fonts/league_gothic.ttf') format('truetype'),
+	url('../fonts/league_gothic.svg#league_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'fanwoodregular';
+	src: url('../fonts/fanwood-webfont.eot');
+	src: url('../fonts/fanwood-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fanwood-webfont.woff') format('woff'),
+	url('../fonts/fanwood-webfont.ttf') format('truetype'),
+	url('../fonts/fanwood-webfont.svg#fanwoodregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
